@@ -1,0 +1,22 @@
+{
+  "name": "readmezy",
+  "version": "0.0.1",
+  "description": "An easy-to-use README generator created in the Node environment!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eclevela-1234/READMEZY.git"
+  },
+  "author": "Eliot Cleveland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eclevela-1234/READMEZY/issues"
+  },
+  "homepage": "https://github.com/eclevela-1234/READMEZY#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
