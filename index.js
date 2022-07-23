@@ -44,7 +44,7 @@ const questions = [{
   {
     type: 'input',
     name: 'email',
-    message: 'Enter your Github username (Required)',
+    message: 'Enter your email address (Required)',
     validate: emailInput => {
       if (emailInput) {
         return true;
@@ -62,12 +62,20 @@ const questions = [{
   }
 ];
 
+const promptSections = (sections) => console.log(sections);
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init () {
-    return inquirer.prompt(questions).then(answers => console.log(answers));
+    return inquirer.prompt(questions)
+    // .then(promptSections)
+    .then(answers => { console.log(answers);
+        const {sections, name, description, ...contact } = answers;
+        promptSections(sections);
+        console.log(name, description, contact);
+    })
+
 
 }
 
