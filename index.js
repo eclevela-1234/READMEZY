@@ -73,14 +73,19 @@ const questions = [
 ];
 
 const sectionQuestions = (sectionSubjects) => {
-    let sectionQuestionsArr = []; 
+  let sectionQuestionsArr = [];
   for (i = 0; i < sectionSubjects.length; i++) {
     let sectionQuestionsObj = {
       type: "input",
       name: sectionSubjects[i],
       message: "Add the " + sectionSubjects[i] + " below: \n",
       validate: (input) => {
-        return input ? true : false;
+        if (input) {
+          return true;
+        } else {
+          console.log("You need to enter " + sectionSubjects[i] + " info!");
+          return false;
+        }
       },
     };
     sectionQuestionsArr.push(sectionQuestionsObj);
@@ -97,11 +102,14 @@ function init() {
       .prompt(questions)
       // .then(promptSections)
       .then((answers) => {
+        // run page build for secions here
         let sectionSubjects = answers.sections;
-        console.log(sectionQuestions(sectionSubjects));
-        console.log(answers);
+        inquirer.prompt(sectionQuestions(sectionSubjects))
+        .then(data => console.log(data));
+
         // console.log(name, description, contact);
       })
+
   );
   // .then(data => console.log(data));
 }
