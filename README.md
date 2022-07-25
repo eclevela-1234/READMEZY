@@ -22,16 +22,16 @@
 
 ## Installation Instructions
 
-Clone the repository then set up node environment. Make sure to have node installed in advance.
+Make sure to have node installed in advance. Clone the repository then set up node environment by typing "npm init" into the integrated terminal. Next install inquirer version 8.2.4 by typing "npm i inquirer@8.2.4" into the integrated terminal. You're all set up!
 ## Usage Information
 
 Run node index.js from the root directory to start the program. Follow the on screen prompts. Remember that it will be easy to update your document after it is created so don't stress the details too much! Your README.md file will be saved in the 'dist' directory.
 ## Contribution Guidelines
 
-Anyone can submit a pull request. Please reach out if you do as this repo is not closely monitored. In the future, I would like to have a seemless way to add images to the document
+Anyone can submit a pull request. Please reach out if you do as this repo is not closely monitored. I would like to eventually have a seemless way to add images to the document.
 ## Collaboration Credits
 
-So far it's just me. Note: I was given a small amout of starter code to begin.
+So far it's just me. Note: I was given a small amout of starter code to begin this project.
 ## Questions
 For information about the developer, see my [GitHub Profile](https://github.com/eclevela-1234)
 
