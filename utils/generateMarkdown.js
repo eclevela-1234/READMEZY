@@ -1,4 +1,3 @@
-
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}
@@ -13,8 +12,9 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 
-module.exports = READMEdata => {
-    const {name, description, github, email, sections, sectionContent} = READMEdata;
+module.exports = (READMEdata) => {
+  const { name, description, github, email, sections, sectionContent } =
+    READMEdata;
   return `
 # ${name}
 
@@ -22,13 +22,18 @@ module.exports = READMEdata => {
 
 ## Table of Contents
 
-${sections.map(section => {
+${sections
+  .map((section) => {
     return `
-- [${section}](#${section.toLowerCase().split(' ').join('-')})`
-}).join('')}
+[${section}](#${section.toLowerCase().split(" ").join("-")})\n`;
+  })
+  .join("")}
 
+${Object.entries(sectionContent[0]).map(([key, value]) => {
+  return `
+## ${key}\n
+${value}`;
+})}
 
-## Link to Deployed Site
 `;
-
-}
+};
