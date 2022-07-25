@@ -77,6 +77,18 @@ const promptMain = () => {
         "Collaboration Credits",
       ],
     },
+    {
+        type: "list",
+        name: "license",
+        message:
+          "Select a license for your repository",
+        choices: [
+          "MIT",
+          "GNU - GPLv3",
+          "No-License"
+        ],
+        default: 0
+      }
   ]);
 };
 const promptSectionContent = (READMEdata) => {
