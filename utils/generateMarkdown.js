@@ -35,6 +35,7 @@ ${sections
   })
   .join("")}
 [Questions](#questions)
+
 [License](#license)
 
 ${Object.entries(sectionContent[0])
@@ -43,7 +44,7 @@ ${Object.entries(sectionContent[0])
 ## ${key}\n
 ${value}`;
   })
-  .join("")}}
+  .join("")}
 ## Questions
 For information about the developer, see my [GitHub Profile](https://github.com/${github})
 
