@@ -14,11 +14,21 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 
 module.exports = READMEdata => {
-    const {name, description, github, email, ...Sections} = READMEdata;
+    const {name, description, github, email, sections, sectionContent} = READMEdata;
   return `
 # ${name}
 
 **${description}**
+
+## Table of Contents
+
+${sections.map(section => {
+    return `
+- [${section}](#${section.toLowerCase().split(' ').join('-')})`
+}).join('')}
+
+
+## Link to Deployed Site
 `;
 
 }

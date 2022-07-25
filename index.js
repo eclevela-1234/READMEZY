@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const generateREADME = require("./utils/generateMarkdown.js");
+const fs = require("fs");
 // TODO: Create an array of questions for user input
 const promptMain = () => {
   console.log(`
@@ -98,7 +99,9 @@ const promptSectionContent = (READMEdata) => {
   });
 };
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const writeToFile = (MDstring) => {
+    fs.writeFile("./dist/README.md", MDstring, err => err? console.log(err): console.log("README.md file created in 'dist' directory"))
+}
 
 // Function call to initialize app
 promptMain()
@@ -107,5 +110,5 @@ promptMain()
     return generateREADME(READMEdata);
   })
   .then(MDstring => {
-    console.log(MDstring);
+    writeToFile(MDstring);
   });
