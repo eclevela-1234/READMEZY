@@ -16,6 +16,8 @@
 
 [Collaboration Credits](#collaboration-credits)
 
+[Video}(#video)
+
 [Questions](#questions)
 
 [License](#license)
