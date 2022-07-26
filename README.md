@@ -3,7 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **A quick and easy way to set up a professional looking README using node. App will generate and interactive document with table of contents linked to subjects of your choosing. It takes care of the heavy lifting so you can quickly launch your app with a polished README. I had a lot of fun learning more ES6 syntax and tricks on this project.**
-![screenshot](./assets/images/screenshot)
+
+![screenshot](./assets/images/screenshot.png)
 ## Table of Contents
 
 
