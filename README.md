@@ -2,8 +2,8 @@
 # READMEZY
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**A quick and easy way to set up a professional looking README using node. App will generate and interactive document with table of contents linked to subjects of your choosing. It takes care of the heavy lifting so you can quickly launch your app with a polished README. I had a lot of fun learning more ES6 syntax and tricks on this project**
-
+**A quick and easy way to set up a professional looking README using node. App will generate and interactive document with table of contents linked to subjects of your choosing. It takes care of the heavy lifting so you can quickly launch your app with a polished README. I had a lot of fun learning more ES6 syntax and tricks on this project.**
+![screenshot](./assets/images/screenshot)
 ## Table of Contents
 
 
@@ -22,7 +22,7 @@
 
 ## Installation Instructions
 
-Make sure to have node installed in advance. Clone the repository then set up node environment by typing "npm init" into the integrated terminal. Next install inquirer version 8.2.4 by typing "npm i inquirer@8.2.4" into the integrated terminal. You're all set up!
+Make sure to have node installed in advance. Clone the repository then set up node environment by typing "npm install" into the integrated terminal. You're all set up!
 ## Usage Information
 
 Run node index.js from the root directory to start the program. Follow the on screen prompts. Remember that it will be easy to update your document after it is created so don't stress the details too much! Your README.md file will be saved in the 'dist' directory.
@@ -32,6 +32,8 @@ Anyone can submit a pull request. Please reach out if you do as this repo is not
 ## Collaboration Credits
 
 So far it's just me. Note: I was given a small amout of starter code to begin this project.
+## Video
+[Open link](https://drive.google.com/file/d/1OODv4flR3_RhjV2-QGOGE-Gdccnw-Bid/view) to view a brief [video](https://drive.google.com/file/d/1OODv4flR3_RhjV2-QGOGE-Gdccnw-Bid/view) tutorial of READMEZY's capabilties.
 ## Questions
 For information about the developer, see my [GitHub Profile](https://github.com/eclevela-1234)
 
